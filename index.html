@@ -1,0 +1,1430 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ru"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Семейное кафе «Карлсон» в Якутске — детская зона, праздники, доставка</title>
+<style>
+  /* === БАЗОВЫЕ СТИЛИ ЛЕНДИНГА === */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #2c2c2c; line-height: 1.6; background: #fff; }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+  /* === HEADER === */
+  header { padding: 20px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; background: #fff; z-index: 100; }
+  .header-inner { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 24px; font-weight: 700; color: #e63946; }
+  nav ul { display: flex; gap: 24px; list-style: none; }
+  nav a { font-weight: 500; transition: color .2s; }
+  nav a:hover { color: #e63946; }
+  .phone { font-weight: 600; color: #e63946; }
+
+  /* === HERO === */
+  .hero { padding: 80px 0; background: linear-gradient(135deg, #fff5f5 0%, #fff 100%); text-align: center; }
+  .hero h1 { font-size: 48px; margin-bottom: 16px; }
+  .hero p { font-size: 20px; color: #666; margin-bottom: 32px; }
+  .btn { display: inline-block; padding: 14px 32px; background: #e63946; color: #fff; border-radius: 8px; font-weight: 600; border: none; cursor: pointer; transition: background .2s; font-size: 16px; }
+  .btn:hover { background: #d62828; }
+  .btn-outline { background: transparent; border: 2px solid #e63946; color: #e63946; }
+  .btn-outline:hover { background: #e63946; color: #fff; }
+
+  /* === SECTIONS === */
+  section { padding: 60px 0; }
+  section h2 { font-size: 36px; margin-bottom: 32px; text-align: center; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .card { background: #fff; border: 1px solid #eee; border-radius: 12px; padding: 24px; transition: box-shadow .2s; }
+  .card:hover { box-shadow: 0 8px 24px rgba(0,0,0,.08); }
+  .card h3 { margin-bottom: 12px; color: #e63946; }
+
+  /* === STATS === */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 20px; margin-top: 40px; text-align: center; }
+  .stat-num { font-size: 32px; font-weight: 700; color: #e63946; }
+  .stat-label { color: #666; font-size: 14px; }
+
+  /* === PACKAGES === */
+  .packages { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .package { border: 2px solid #eee; border-radius: 12px; padding: 32px 24px; text-align: center; }
+  .package.featured { border-color: #e63946; }
+  .package h3 { font-size: 24px; margin-bottom: 8px; }
+  .package ul { list-style: none; text-align: left; margin: 20px 0; }
+  .package li { padding: 8px 0; border-bottom: 1px solid #f5f5f5; }
+  .package li::before { content: "✓ "; color: #e63946; font-weight: 700; }
+
+  /* === REVIEWS === */
+  .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+  .review { background: #f9f9f9; padding: 24px; border-radius: 12px; }
+  .review-author { margin-top: 16px; font-weight: 600; color: #666; font-size: 14px; }
+  .stars { color: #f4a261; margin-bottom: 12px; }
+
+  /* === FORM === */
+  .booking-form { background: #fff5f5; padding: 40px; border-radius: 16px; max-width: 600px; margin: 0 auto; }
+  .form-group { margin-bottom: 16px; }
+  .form-group label { display: block; margin-bottom: 6px; font-weight: 500; }
+  .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; font-family: inherit; }
+
+  /* === FOOTER === */
+  footer { background: #2c2c2c; color: #fff; padding: 40px 0 20px; }
+  footer a { color: #ccc; }
+  footer a:hover { color: #fff; }
+  .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-bottom: 32px; }
+  .footer-bottom { border-top: 1px solid #444; padding-top: 20px; text-align: center; color: #888; font-size: 13px; }
+
+  /* === ПОЛИТИКИ (модалки) === */
+  .policy-modal { max-width: 720px; max-height: 85vh; overflow-y: auto; }
+  .policy-modal h2 { color: #e63946; margin-bottom: 16px; }
+  .policy-modal h3 { margin: 16px 0 8px; color: #2c2c2c; }
+  .policy-modal p, .policy-modal li { margin-bottom: 8px; color: #444; }
+  .policy-modal ul { padding-left: 20px; }
+
+  /* ============================================ */
+  /* === ПУБЛИЧНЫЕ НОВОСТИ И БЛОГ === */
+  /* ============================================ */
+  .public-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #eee;
+    cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+  }
+  .public-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(230,57,70,.15);
+    border-color: #e63946;
+  }
+  .public-card .card-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #fff5f5;
+    color: #e63946;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    width: fit-content;
+  }
+  .public-card.blog-card .card-tag {
+    background: #f0f7ff;
+    color: #1a73e8;
+  }
+  .public-card h3 {
+    color: #2c2c2c;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  .public-card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.5;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .public-card .card-meta {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .public-card .read-more {
+    color: #e63946;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .empty-state-public {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #888;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px dashed #ddd;
+  }
+
+  /* === Модалка статьи === */
+  .article-modal {
+    max-width: 720px;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+  }
+  .article-modal-header {
+    background: linear-gradient(135deg, #e63946 0%, #d62828 100%);
+    color: #fff;
+    padding: 32px;
+    position: relative;
+  }
+  .article-modal-header.blog-header {
+    background: linear-gradient(135deg, #1a73e8 0%, #0d47a1 100%);
+  }
+  .article-modal-header .modal-close {
+    color: #fff;
+    opacity: .8;
+    top: 16px;
+    right: 20px;
+  }
+  .article-modal-header .modal-close:hover { opacity: 1; }
+  .article-modal-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(255,255,255,.2);
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .article-modal-header h2 {
+    font-size: 28px;
+    line-height: 1.3;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  .article-modal-date {
+    font-size: 14px;
+    opacity: .85;
+  }
+  .article-modal-body {
+    padding: 32px;
+    max-height: 50vh;
+    overflow-y: auto;
+  }
+  .article-modal-body p {
+    color: #444;
+    line-height: 1.7;
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+  .article-modal-footer {
+    padding: 20px 32px;
+    background: #f9f9f9;
+    border-top: 1px solid #eee;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .article-modal-footer .btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .article-modal-footer .btn-ghost {
+    background: transparent;
+    color: #666;
+    border: 1px solid #ddd;
+  }
+  .article-modal-footer .btn-ghost:hover {
+    background: #eee;
+    color: #2c2c2c;
+  }
+
+  /* ============================================ */
+  /* === АДМИН-ПАНЕЛЬ === */
+  /* ============================================ */
+  .admin-fab {
+    position: fixed; bottom: 24px; right: 24px;
+    width: 56px; height: 56px; border-radius: 50%;
+    background: #1a1a2e; color: #fff; border: none;
+    font-size: 24px; cursor: pointer; z-index: 999;
+    box-shadow: 0 4px 16px rgba(0,0,0,.3);
+    display: flex; align-items: center; justify-content: center;
+    transition: transform .2s;
+  }
+  .admin-fab:hover { transform: scale(1.1); }
+  .admin-fab.hidden { display: none; }
+
+  .modal-overlay {
+    position: fixed; inset: 0; background: rgba(0,0,0,.6);
+    display: none; align-items: center; justify-content: center;
+    z-index: 1000; padding: 20px;
+  }
+  .modal-overlay.active { display: flex; }
+  .modal {
+    background: #fff; border-radius: 16px; padding: 32px;
+    max-width: 480px; width: 100%; position: relative;
+    max-height: 90vh; overflow-y: auto;
+  }
+  .modal-close {
+    position: absolute; top: 12px; right: 16px;
+    background: none; border: none; font-size: 28px;
+    cursor: pointer; color: #999;
+  }
+  .modal h2 { margin-bottom: 20px; color: #1a1a2e; }
+
+  .admin-panel {
+    position: fixed; inset: 0; background: #0f0f1e;
+    color: #e8e8f0; z-index: 2000; display: none;
+    flex-direction: column;
+  }
+  .admin-panel.active { display: flex; }
+  .admin-header {
+    background: #1a1a2e; padding: 16px 24px;
+    display: flex; justify-content: space-between; align-items: center;
+    border-bottom: 1px solid #2a2a4a;
+  }
+  .admin-header h1 { font-size: 20px; color: #fff; }
+  .admin-user-info { display: flex; align-items: center; gap: 12px; font-size: 14px; }
+  .admin-badge {
+    padding: 4px 10px; border-radius: 12px; font-size: 12px;
+    background: #e63946; color: #fff; font-weight: 600;
+  }
+  .admin-badge.operator { background: #2a9d8f; }
+  .admin-badge.editor { background: #e9c46a; color: #222; }
+  .admin-badge.admin { background: #e63946; }
+
+  .admin-body { display: flex; flex: 1; overflow: hidden; }
+  .admin-sidebar {
+    width: 240px; background: #1a1a2e; padding: 20px 0;
+    border-right: 1px solid #2a2a4a;
+  }
+  .admin-nav-item {
+    display: block; padding: 12px 24px; color: #aaa;
+    cursor: pointer; transition: all .2s; border: none;
+    background: none; text-align: left; width: 100%; font-size: 15px;
+  }
+  .admin-nav-item:hover { background: #2a2a4a; color: #fff; }
+  .admin-nav-item.active { background: #2a2a4a; color: #fff; border-left: 3px solid #e63946; }
+  .admin-nav-item.disabled { opacity: .4; cursor: not-allowed; }
+
+  .admin-content { flex: 1; padding: 32px; overflow-y: auto; }
+  .admin-section { display: none; }
+  .admin-section.active { display: block; }
+  .admin-section h2 { color: #fff; margin-bottom: 24px; font-size: 24px; }
+
+  .admin-table {
+    width: 100%; background: #1a1a2e; border-radius: 12px;
+    overflow: hidden; border-collapse: collapse;
+  }
+  .admin-table th, .admin-table td {
+    padding: 14px 16px; text-align: left; border-bottom: 1px solid #2a2a4a;
+  }
+  .admin-table th { background: #22223a; color: #aaa; font-weight: 600; font-size: 13px; text-transform: uppercase; }
+  .admin-table tr:last-child td { border-bottom: none; }
+  .admin-table tr:hover td { background: #22223a; }
+
+  .admin-btn {
+    padding: 8px 14px; border-radius: 6px; border: none;
+    cursor: pointer; font-size: 13px; font-weight: 500;
+    transition: opacity .2s;
+  }
+  .admin-btn:hover { opacity: .85; }
+  .admin-btn-primary { background: #e63946; color: #fff; }
+  .admin-btn-success { background: #2a9d8f; color: #fff; }
+  .admin-btn-danger { background: #c1121f; color: #fff; }
+  .admin-btn-secondary { background: #444; color: #fff; }
+
+  .admin-form {
+    background: #1a1a2e; padding: 24px; border-radius: 12px;
+    margin-bottom: 24px;
+  }
+  .admin-form label { display: block; color: #aaa; margin-bottom: 6px; font-size: 14px; }
+  .admin-form input, .admin-form select, .admin-form textarea {
+    width: 100%; padding: 10px 12px; background: #0f0f1e;
+    border: 1px solid #2a2a4a; border-radius: 6px;
+    color: #fff; font-size: 14px; margin-bottom: 14px;
+    font-family: inherit;
+  }
+  .admin-form input:focus, .admin-form select:focus, .admin-form textarea:focus {
+    outline: none; border-color: #e63946;
+  }
+  .admin-form textarea { min-height: 100px; resize: vertical; }
+
+  .empty-state {
+    text-align: center; padding: 40px; color: #666;
+    background: #1a1a2e; border-radius: 12px;
+  }
+
+  .news-card {
+    background: #1a1a2e; padding: 20px; border-radius: 12px;
+    margin-bottom: 16px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;
+  }
+  .news-card h3 { color: #fff; margin-bottom: 6px; }
+  .news-card p { color: #aaa; font-size: 14px; }
+  .news-card .meta { color: #666; font-size: 12px; margin-top: 8px; }
+  .news-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+  .toast {
+    position: fixed; top: 24px; right: 24px;
+    background: #2a9d8f; color: #fff; padding: 14px 20px;
+    border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,.3);
+    z-index: 3000; transform: translateX(400px);
+    transition: transform .3s;
+  }
+  .toast.show { transform: translateX(0); }
+  .toast.error { background: #c1121f; }
+
+  @media (max-width: 768px) {
+    .admin-body { flex-direction: column; }
+    .admin-sidebar { width: 100%; display: flex; overflow-x: auto; padding: 0; }
+    .admin-nav-item { white-space: nowrap; padding: 14px 16px; }
+    .hero h1 { font-size: 32px; }
+    nav ul { display: none; }
+  }
+  @media (max-width: 600px) {
+    .article-modal-header { padding: 24px; }
+    .article-modal-header h2 { font-size: 22px; }
+    .article-modal-body { padding: 20px; }
+    .article-modal-footer { padding: 16px 20px; }
+  }
+</style>
+</head>
+<body style="">
+
+<!-- ============ ОРИГИНАЛЬНЫЙ ЛЕНДИНГ ============ -->
+<header>
+  <div class="container header-inner">
+    <div class="logo">Карлсон</div>
+    <nav>
+      <ul>
+        <li><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#kids">Детям</a></li>
+        <li><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#party">Праздники</a></li>
+        <li><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#vip">VIP-залы</a></li>
+        <li><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#delivery">Доставка</a></li>
+        <li><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#news">Новости</a></li>
+        <li><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#blog">Блог</a></li>
+        <li><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking">Бронирование</a></li>
+      </ul>
+    </nav>
+    <a href="tel:+79142747027" class="phone">+7 914 274-70-27</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <p style="color:#e63946;font-weight:600;margin-bottom:8px;">Семейное кафе · Якутск</p>
+    <h1>Где детям не скучно, а родителям спокойно</h1>
+    <p>Детская комната с камерой — видите ребёнка на ТВ прямо за столиком. Игровая с лабиринтом, VIP-залы от 1000 ₽, праздник под ключ и бизнес-ланч от 620 ₽.</p>
+    <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn">Забронировать стол</a>
+  </div>
+</section>
+
+<section style="background:#fafafa;">
+  <div class="container">
+    <h2>Почему родители выбирают «Карлсон»</h2>
+    <div class="grid">
+      <div class="card"><h3>📹 Камера в детской</h3><p>Трансляция на ТВ в зале — видите ребёнка за столиком</p></div>
+      <div class="card"><h3>🎠 Игровая зона</h3><p>Лабиринт и мягкие модули для активных малышей</p></div>
+      <div class="card"><h3>🏛 2 VIP-зала</h3><p>«Каминный» и «Библиотека» — для тихого отдыха</p></div>
+      <div class="card"><h3>🍽 Ресторанное меню</h3><p>Профессиональный звук и блюда на любой вкус</p></div>
+    </div>
+    <div class="stats">
+      <div><div class="stat-num">500+</div><div class="stat-label">праздников с 2019 года</div></div>
+      <div><div class="stat-num">880</div><div class="stat-label">отзывов гостей</div></div>
+      <div><div class="stat-num">4,9</div><div class="stat-label">средняя оценка в картах</div></div>
+      <div><div class="stat-num">7 лет</div><div class="stat-label">работаем в Якутске</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="kids">
+  <div class="container">
+    <h2>Детская комната + игровая</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Ребёнок играет — вы видите его на ТВ</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Детская комната с трансляцией</h3>
+        <p>Отдельная комната с игрушками под видеонаблюдением. Картинка идёт на ТВ в общем зале: ребёнок играет, а вы видите его прямо за столиком.</p>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn btn-outline" style="margin-top:16px;">Забронировать</a>
+      </div>
+      <div class="card">
+        <h3>Игровая зона в зале</h3>
+        <p>Лабиринт, горка, мягкие модули и трёхколёсные каталки — для тех, кто хочет двигаться, а не сидеть.</p>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn btn-outline" style="margin-top:16px;">Забронировать</a>
+      </div>
+      <div class="card">
+        <h3>Праздник под ключ</h3>
+        <p>Аниматоры, мастер-классы, шоу-программы, торт и фотограф — берём всю организацию на себя.</p>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#party" class="btn btn-outline" style="margin-top:16px;">Выбрать пакет</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff5f5;">
+  <div class="container">
+    <h2>Спокойный ужин</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Вы отдыхаете — ребёнок под присмотром</p>
+    <div class="grid">
+      <div class="card"><h3>📺 Камера → ТВ</h3><p>Видите ребёнка прямо за столиком</p></div>
+      <div class="card"><h3>🧸 Детская комната</h3><p>Отдельная зона с игрушками</p></div>
+      <div class="card"><h3>🎈 Игровая в зале</h3><p>Лабиринт и горки для активных</p></div>
+      <div class="card"><h3>👨‍👩‍👧 Присмотр персонала</h3><p>Дети под надёжным контролем</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="party">
+  <div class="container">
+    <h2>Детский праздник</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Праздник под ключ — без вашего стресса</p>
+    <div class="packages">
+      <div class="package">
+        <h3>Базовый</h3>
+        <p>Камерный день рождения для своих</p>
+        <ul>
+          <li>VIP-зал на 2 часа</li>
+          <li>Детское меню</li>
+          <li>Торт на заказ</li>
+          <li>Украшение шарами</li>
+        </ul>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn btn-outline">Выбрать пакет</a>
+      </div>
+      <div class="package featured">
+        <h3>Стандарт</h3>
+        <p>Полноценный праздник с аниматором</p>
+        <ul>
+          <li>Всё из «Базового»</li>
+          <li>Аниматор 1 час</li>
+          <li>Мастер-класс на выбор</li>
+          <li>Сладкий стол</li>
+        </ul>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn">Выбрать пакет</a>
+      </div>
+      <div class="package">
+        <h3>Всё включено</h3>
+        <p>Большое событие с шоу и фотографом</p>
+        <ul>
+          <li>Всё из «Стандарта»</li>
+          <li>Шоу-программа</li>
+          <li>Фотограф 1 час</li>
+          <li>Аква-грим для гостей</li>
+        </ul>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn btn-outline">Выбрать пакет</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="vip" style="background:#fafafa;">
+  <div class="container">
+    <h2>VIP-залы</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Отдельная комната — от 1000 ₽</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Зал «Малыш»</h3>
+        <p>До 8 человек · Своя зона у окна</p>
+        <p style="font-size:24px;font-weight:700;color:#e63946;margin:12px 0;">От 1000 ₽</p>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn btn-outline">Забронировать</a>
+      </div>
+      <div class="card">
+        <h3>Зал «Карлсон»</h3>
+        <p>До 14 человек · Большой стол</p>
+        <p style="font-size:24px;font-weight:700;color:#e63946;margin:12px 0;">От 1500 ₽</p>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking" class="btn btn-outline">Забронировать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="delivery">
+  <div class="container">
+    <h2>Доставка по Якутску</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Те же блюда — прямо к вам</p>
+    <div style="text-align:center;max-width:600px;margin:0 auto;">
+      <p style="margin-bottom:24px;">Готовим всё в кафе и привозим горячим. При заказе — подарок: чем больше сумма, тем приятнее сюрприз.</p>
+      <a href="https://wa.me/79142747027" class="btn">Заказать доставку</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ПУБЛИЧНЫЕ НОВОСТИ ============ -->
+<section id="news" style="background:#fff5f5;">
+  <div class="container">
+    <h2>📰 Новости кафе</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Акции, события и новые предложения «Карлсона»</p>
+    <div class="grid" id="publicNewsList">
+    <div class="public-card" onclick="openArticle('news', 0)">
+      <span class="card-tag">📰 Новость</span>
+      <h3>Я покакал</h3>
+      <p>I'am pop in pants</p>
+      <div class="card-meta">
+        <span>📅 5 ноября 2026 г.</span>
+        <span class="read-more">Читать →</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ============ ПУБЛИЧНЫЙ БЛОГ ============ -->
+<section id="blog">
+  <div class="container">
+    <h2>📝 Блог</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Полезные статьи для родителей и маленьких гостей</p>
+    <div class="grid" id="publicBlogList">
+    <div class="public-card blog-card" onclick="openArticle('blog', 0)">
+      <span class="card-tag">📝 Статья</span>
+      <h3>За камунизм</h3>
+      <p>За Карла Маркса</p>
+      <div class="card-meta">
+        <span>📅 5 ноября 2026 г.</span>
+        <span class="read-more">Читать →</span>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section style="background:#f9f9f9;">
+  <div class="container">
+    <h2>Что говорят гости</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Истории наших семей</p>
+    <div class="reviews">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>«Еда очень вкусная, а персонал быстрый и отзывчивый, видно, что ребята очень стараются и качественно делают свою работу. Цены тоже просто супер 👍🏻. Всем советую!»</p>
+        <div class="review-author">Сайаана Семенова · Гость, июнь 2025</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>«Место хорошее, убранное, очень сильно понравилось мероприятие "Игра в Кальмара". Ставлю 5 звёзд :)»</p>
+        <div class="review-author">Кирилл Владимиров · Гость, июнь 2026</div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>«Приятно удивлена наличием бизнес ланча за 620 руб борщ очень вкусный второе салат и чай блины с вареньем. Огромное спасибо Виктории за супер обслуживание»</p>
+        <div class="review-author">Селена Местникова · Бизнес-ланч, апрель 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="container">
+    <h2>Забронируйте стол или праздник</h2>
+    <p style="text-align:center;color:#666;margin-bottom:32px;">Оставьте заявку, и мы свяжемся с вами в течение 15 минут</p>
+    <form class="booking-form" onsubmit="submitBooking(event)">
+      <div class="form-group">
+        <label>Ваше имя</label>
+        <input type="text" name="name" required="">
+      </div>
+      <div class="form-group">
+        <label>Телефон</label>
+        <input type="tel" name="phone" required="">
+      </div>
+      <div class="form-group">
+        <label>Что планируете?</label>
+        <select name="purpose">
+          <option>Просто поужинать</option>
+          <option>Забронировать VIP-зал</option>
+          <option>Организовать праздник</option>
+        </select>
+      </div>
+      <button type="submit" class="btn" style="width:100%">Отправить заявку</button>
+      <p style="margin-top:16px;font-size:13px;color:#888;text-align:center;">
+        Нажимая кнопку, вы соглашаетесь с
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#" onclick="openPolicy('privacy');return false;" style="color:#e63946;">политикой конфиденциальности</a>
+        и
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#" onclick="openPolicy('terms');return false;" style="color:#e63946;">пользовательским соглашением</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="color:#fff;margin-bottom:12px;">Карлсон</div>
+        <p style="color:#aaa;">«Семья. Любовь. Счастье.»</p>
+        <p style="color:#888;font-size:13px;margin-top:8px;">2026 Семейное кафе «Карлсон».<br>Часть OMG · obschepit media group.</p>
+      </div>
+      <div>
+        <h4 style="margin-bottom:12px;">Навигация</h4>
+        <p><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#party">Праздники</a></p>
+        <p><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#vip">VIP-залы</a></p>
+        <p><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#delivery">Доставка</a></p>
+        <p><a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#booking">Бронирование</a></p>
+      </div>
+      <div>
+        <h4 style="margin-bottom:12px;">Контакты</h4>
+        <p><a href="tel:+79142747027">+7 914 274-70-27</a></p>
+        <p><a href="https://wa.me/79142747027">WhatsApp*</a></p>
+        <p><a href="https://t.me/karlson_ykt">Telegram</a></p>
+      </div>
+      <div>
+        <h4 style="margin-bottom:12px;">Адрес</h4>
+        <p>г. Якутск</p>
+        <p>ул. Кальвица, 14/1а</p>
+        <p>1 этаж</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#" onclick="openPolicy('privacy');return false;">Политика конфиденциальности</a> ·
+        <a href="file:///C:/Users/k_2_313_2/Downloads/Qwen_html_20261105_163z140j3.html#" onclick="openPolicy('terms');return false;">Пользовательское соглашение</a>
+      </p>
+      <p style="margin-top:8px;">ООО "Общепит медиа" ИНН 6318015289 ОГРН 1166313099457 КПП 143501001</p>
+      <p style="margin-top:4px;font-size:11px;">*WhatsApp принадлежит к экстремистской компании Meta и запрещена в России</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ МОДАЛКИ ПОЛИТИК ============ -->
+<div class="modal-overlay" id="privacyModal">
+  <div class="modal policy-modal">
+    <button class="modal-close" onclick="closeModal('privacyModal')">×</button>
+    <h2>Политика конфиденциальности</h2>
+    <p>Настоящая Политика конфиденциальности персональных данных действует в отношении всей информации, которую сайт семейного кафе «Карлсон» может получить о Пользователе во время использования сайта.</p>
+    <h3>1. Определение терминов</h3>
+    <p>«Администрация сайта» — уполномоченные сотрудники на управления сайтом, действующие от имени ООО "Общепит медиа".</p>
+    <p>«Персональные данные» — любая информация, относящаяся к прямо или косвенно определенному физическому лицу.</p>
+    <h3>2. Предмет политики конфиденциальности</h3>
+    <p>Настоящая Политика устанавливает обязательства Администрации сайта по неразглашению и обеспечению режима защиты конфиденциальности персональных данных, которые Пользователь предоставляет при оформлении заказа/брони.</p>
+    <h3>3. Цели сбора персональной информации</h3>
+    <ul>
+      <li>Идентификации Пользователя для оформления бронирования.</li>
+      <li>Установления обратной связи с Пользователем.</li>
+      <li>Подтверждения достоверности персональных данных.</li>
+    </ul>
+    <h3>4. Способы и сроки обработки</h3>
+    <p>Обработка персональных данных осуществляется без ограничения срока, любым законным способом.</p>
+    <h3>5. Заключительные положения</h3>
+    <p>Администрация сайта вправе вносить изменения в настоящую Политику без согласия Пользователя.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="termsModal">
+  <div class="modal policy-modal">
+    <button class="modal-close" onclick="closeModal('termsModal')">×</button>
+    <h2>Пользовательское соглашение</h2>
+    <h3>1. Общие положения</h3>
+    <p>Использование Сайта означает согласие Пользователя с настоящим Соглашением. В случае несогласия Пользователь должен воздержаться от использования Сайта.</p>
+    <h3>2. Предмет соглашения</h3>
+    <p>Администрация предоставляет Пользователю доступ к информации о кафе, его меню, услугах по организации праздников, а также возможность оставлять заявки на бронирование.</p>
+    <h3>3. Права и обязанности сторон</h3>
+    <p>Пользователь обязуется предоставлять достоверную информацию. Администрация обязуется обрабатывать заявки и поддерживать работоспособность Сайта.</p>
+    <h3>4. Ответственность сторон</h3>
+    <p>Вся информация на Сайте носит справочный характер и не является публичной офертой в соответствии с ГК РФ.</p>
+  </div>
+</div>
+
+<!-- ============ АДМИН-ПАНЕЛЬ ============ -->
+<button class="admin-fab hidden" id="adminFab" onclick="openAdmin()" title="Админ-панель">⚙</button>
+
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('loginModal')">×</button>
+    <h2>🔐 Вход в админ-панель</h2>
+    <form onsubmit="handleLogin(event)">
+      <div class="form-group">
+        <label>Логин</label>
+        <input type="text" id="loginUser" required="" autocomplete="username">
+      </div>
+      <div class="form-group">
+        <label>Пароль</label>
+        <input type="password" id="loginPass" required="" autocomplete="current-password">
+      </div>
+      <button type="submit" class="btn" style="width:100%">Войти</button>
+      <p style="margin-top:16px;font-size:13px;color:#888;text-align:center;">
+        Демо: <b>admin</b> / <b>admin123</b>
+      </p>
+    </form>
+  </div>
+</div>
+
+<div class="admin-panel" id="adminPanel">
+  <div class="admin-header">
+    <h1>⚙ Админ-панель «Карлсон»</h1>
+    <div class="admin-user-info">
+      <span id="adminUserName">Главный администратор</span>
+      <span class="admin-badge admin" id="adminUserRole">Администратор</span>
+      <button class="admin-btn admin-btn-secondary" onclick="logout()">Выйти</button>
+    </div>
+  </div>
+  <div class="admin-body">
+    <aside class="admin-sidebar">
+      <button class="admin-nav-item" data-section="users" onclick="switchSection('users')">👥 Пользователи</button>
+      <button class="admin-nav-item" data-section="bookings" onclick="switchSection('bookings')">📋 Заявки</button>
+      <button class="admin-nav-item" data-section="news" onclick="switchSection('news')">📰 Новости</button>
+      <button class="admin-nav-item active" data-section="blog" onclick="switchSection('blog')">📝 Блог</button>
+    </aside>
+    <main class="admin-content">
+      <div class="admin-section" id="section-users">
+        <h2>Пользователи и роли</h2>
+        <div class="admin-form">
+          <h3 style="color:#fff;margin-bottom:16px;">Добавить пользователя</h3>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div>
+              <label>Логин</label>
+              <input type="text" id="newUserLogin" placeholder="ivan">
+            </div>
+            <div>
+              <label>Пароль</label>
+              <input type="text" id="newUserPass" placeholder="qwerty123">
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div>
+              <label>Имя (ФИО)</label>
+              <input type="text" id="newUserName" placeholder="Иван Иванов">
+            </div>
+            <div>
+              <label>Роль</label>
+              <select id="newUserRole">
+                <option value="operator">Оператор (заявки)</option>
+                <option value="editor">Редактор (новости + блог)</option>
+                <option value="admin">Администратор (всё)</option>
+              </select>
+            </div>
+          </div>
+          <button class="admin-btn admin-btn-success" onclick="addUser()">+ Добавить пользователя</button>
+        </div>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Логин</th><th>Имя</th><th>Роль</th><th>Действия</th>
+            </tr>
+          </thead>
+          <tbody id="usersTableBody">
+    <tr>
+      <td><b>admin</b></td>
+      <td>Главный администратор</td>
+      <td><span class="admin-badge admin" style="font-size:11px;">Администратор</span></td>
+      <td>
+        
+          <button class="admin-btn admin-btn-primary" onclick="changeRole('admin')">Сменить роль</button>
+          <button class="admin-btn admin-btn-danger" onclick="deleteUser('admin')">Удалить</button>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td><b>iva</b></td>
+      <td>Иван</td>
+      <td><span class="admin-badge editor" style="font-size:11px;">Редактор</span></td>
+      <td>
+        
+          <button class="admin-btn admin-btn-primary" onclick="changeRole('iva')">Сменить роль</button>
+          <button class="admin-btn admin-btn-danger" onclick="deleteUser('iva')">Удалить</button>
+        
+      </td>
+    </tr>
+  
+    <tr>
+      <td><b>Tira</b></td>
+      <td>Тара</td>
+      <td><span class="admin-badge operator" style="font-size:11px;">Оператор</span></td>
+      <td>
+        
+          <button class="admin-btn admin-btn-primary" onclick="changeRole('Tira')">Сменить роль</button>
+          <button class="admin-btn admin-btn-danger" onclick="deleteUser('Tira')">Удалить</button>
+        
+      </td>
+    </tr>
+  </tbody>
+        </table>
+      </div>
+
+      <div class="admin-section" id="section-bookings">
+        <h2>Заявки с сайта</h2>
+        <div id="bookingsList"><div class="empty-state">Заявок пока нет</div></div>
+      </div>
+
+      <div class="admin-section" id="section-news">
+        <h2>Новости</h2>
+        <div class="admin-form">
+          <label>Заголовок</label>
+          <input type="text" id="newsTitle" placeholder="Открытие новой игровой зоны">
+          <label>Текст</label>
+          <textarea id="newsText" placeholder="Краткое описание новости..."></textarea>
+          <button class="admin-btn admin-btn-success" onclick="addNews()">+ Опубликовать новость</button>
+        </div>
+        <div id="newsList">
+    <div class="news-card">
+      <div>
+        <h3>Я покакал</h3>
+        <p>I'am pop in pants</p>
+        <div class="meta">👤 Главный администратор · 05.11.2026, 10:27:13</div>
+      </div>
+      <div class="news-actions">
+        <button class="admin-btn admin-btn-danger" onclick="deleteNews(0)">Удалить</button>
+      </div>
+    </div>
+  </div>
+      </div>
+
+      <div class="admin-section active" id="section-blog">
+        <h2>Блог</h2>
+        <div class="admin-form">
+          <label>Заголовок статьи</label>
+          <input type="text" id="blogTitle" placeholder="Как выбрать праздник для ребёнка">
+          <label>Содержание</label>
+          <textarea id="blogText" placeholder="Полный текст статьи..."></textarea>
+          <button class="admin-btn admin-btn-success" onclick="addBlog()">+ Опубликовать статью</button>
+        </div>
+        <div id="blogList">
+    <div class="news-card">
+      <div>
+        <h3>За камунизм</h3>
+        <p>За Карла Маркса</p>
+        <div class="meta">👤 Главный администратор · 05.11.2026, 10:27:45</div>
+      </div>
+      <div class="news-actions">
+        <button class="admin-btn admin-btn-danger" onclick="deleteBlog(0)">Удалить</button>
+      </div>
+    </div>
+  </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+<div class="toast" id="toast">Вы вышли из системы</div>
+
+<script>
+/* ============================================
+   ХРАНИЛИЩЕ И ИНИЦИАЛИЗАЦИЯ
+   ============================================ */
+const DB = {
+  get(key, def) {
+    try { return JSON.parse(localStorage.getItem(key)) ?? def; }
+    catch { return def; }
+  },
+  set(key, val) { localStorage.setItem(key, JSON.stringify(val)); }
+};
+
+function initDB() {
+  if (!DB.get('admin_users')) {
+    DB.set('admin_users', [
+      { login: 'admin', pass: 'admin123', name: 'Главный администратор', role: 'admin' }
+    ]);
+  }
+  if (!DB.get('admin_bookings')) DB.set('admin_bookings', []);
+  if (!DB.get('admin_news')) DB.set('admin_news', []);
+  if (!DB.get('admin_blog')) DB.set('admin_blog', []);
+}
+initDB();
+
+let currentUser = null;
+
+/* ============================================
+   УТИЛИТЫ
+   ============================================ */
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function showToast(msg, isError) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.toggle('error', !!isError);
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+function closeModal(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.classList.remove('active');
+  }
+  document.body.style.overflow = '';
+}
+
+function roleLabel(r) {
+  return { admin: 'Администратор', operator: 'Оператор', editor: 'Редактор' }[r] || r;
+}
+
+/* ============================================
+   ПОЛИТИКИ
+   ============================================ */
+function openPolicy(type) {
+  const id = type === 'privacy' ? 'privacyModal' : 'termsModal';
+  document.getElementById(id).classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+/* ============================================
+   ВХОД В АДМИНКУ
+   ============================================ */
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey && e.shiftKey && e.code === 'KeyA') {
+    e.preventDefault();
+    if (currentUser) openAdmin();
+    else openLogin();
+  }
+  if (e.key === 'Escape') {
+    document.querySelectorAll('.modal-overlay.active').forEach(m => {
+      m.classList.remove('active');
+    });
+    document.body.style.overflow = '';
+  }
+});
+
+let logoClicks = 0, logoTimer;
+document.querySelector('footer .logo')?.addEventListener('click', () => {
+  logoClicks++;
+  clearTimeout(logoTimer);
+  logoTimer = setTimeout(() => logoClicks = 0, 2000);
+  if (logoClicks >= 5) {
+    logoClicks = 0;
+    if (currentUser) openAdmin();
+    else openLogin();
+  }
+});
+
+function openLogin() {
+  document.getElementById('loginModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function handleLogin(e) {
+  e.preventDefault();
+  const login = document.getElementById('loginUser').value.trim();
+  const pass = document.getElementById('loginPass').value;
+  const users = DB.get('admin_users', []);
+  const user = users.find(u => u.login === login && u.pass === pass);
+  if (!user) {
+    showToast('Неверный логин или пароль', true);
+    return;
+  }
+  currentUser = user;
+  sessionStorage.setItem('admin_current', JSON.stringify(user));
+  closeModal('loginModal');
+  openAdmin();
+}
+
+function openAdmin() {
+  if (!currentUser) { openLogin(); return; }
+  document.getElementById('adminPanel').classList.add('active');
+  document.getElementById('adminUserName').textContent = currentUser.name;
+  const badge = document.getElementById('adminUserRole');
+  badge.textContent = roleLabel(currentUser.role);
+  badge.className = 'admin-badge ' + currentUser.role;
+  applyRolePermissions();
+  renderAll();
+}
+
+function applyRolePermissions() {
+  const r = currentUser.role;
+  document.querySelectorAll('.admin-nav-item').forEach(el => {
+    const s = el.dataset.section;
+    let allowed = false;
+    if (r === 'admin') allowed = true;
+    else if (r === 'operator' && s === 'bookings') allowed = true;
+    else if (r === 'editor' && (s === 'news' || s === 'blog')) allowed = true;
+    if (allowed) el.classList.remove('disabled');
+    else el.classList.add('disabled');
+  });
+  const active = document.querySelector('.admin-nav-item.active');
+  if (active && active.classList.contains('disabled')) {
+    const first = document.querySelector('.admin-nav-item:not(.disabled)');
+    if (first) switchSection(first.dataset.section);
+  }
+}
+
+function switchSection(name) {
+  const btn = document.querySelector(`.admin-nav-item[data-section="${name}"]`);
+  if (btn && btn.classList.contains('disabled')) {
+    showToast('Нет доступа к этому разделу', true);
+    return;
+  }
+  document.querySelectorAll('.admin-nav-item').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.admin-section').forEach(s => s.classList.remove('active'));
+  btn?.classList.add('active');
+  document.getElementById('section-' + name)?.classList.add('active');
+}
+
+function logout() {
+  currentUser = null;
+  sessionStorage.removeItem('admin_current');
+  document.getElementById('adminPanel').classList.remove('active');
+  document.getElementById('adminFab').classList.add('hidden');
+  showToast('Вы вышли из системы');
+}
+
+/* ============================================
+   ПОЛЬЗОВАТЕЛИ
+   ============================================ */
+function addUser() {
+  if (currentUser.role !== 'admin') {
+    showToast('Только администратор может управлять пользователями', true);
+    return;
+  }
+  const login = document.getElementById('newUserLogin').value.trim();
+  const pass = document.getElementById('newUserPass').value;
+  const name = document.getElementById('newUserName').value.trim();
+  const role = document.getElementById('newUserRole').value;
+  if (!login || !pass || !name) {
+    showToast('Заполните все поля', true);
+    return;
+  }
+  const users = DB.get('admin_users', []);
+  if (users.some(u => u.login === login)) {
+    showToast('Такой логин уже существует', true);
+    return;
+  }
+  users.push({ login, pass, name, role });
+  DB.set('admin_users', users);
+  document.getElementById('newUserLogin').value = '';
+  document.getElementById('newUserPass').value = '';
+  document.getElementById('newUserName').value = '';
+  renderUsers();
+  showToast('Пользователь добавлен');
+}
+
+function deleteUser(login) {
+  if (currentUser.role !== 'admin') return;
+  if (login === currentUser.login) {
+    showToast('Нельзя удалить самого себя', true);
+    return;
+  }
+  if (!confirm('Удалить пользователя?')) return;
+  let users = DB.get('admin_users', []);
+  users = users.filter(u => u.login !== login);
+  DB.set('admin_users', users);
+  renderUsers();
+  showToast('Пользователь удалён');
+}
+
+function changeRole(login) {
+  if (currentUser.role !== 'admin') return;
+  const users = DB.get('admin_users', []);
+  const u = users.find(x => x.login === login);
+  if (!u) return;
+  const roles = ['operator', 'editor', 'admin'];
+  const next = roles[(roles.indexOf(u.role) + 1) % roles.length];
+  u.role = next;
+  DB.set('admin_users', users);
+  renderUsers();
+  showToast('Роль изменена на «' + roleLabel(next) + '»');
+}
+
+function renderUsers() {
+  const tbody = document.getElementById('usersTableBody');
+  const users = DB.get('admin_users', []);
+  if (!users.length) {
+    tbody.innerHTML = '<tr><td colspan="4" style="text-align:center;color:#666;">Нет пользователей</td></tr>';
+    return;
+  }
+  tbody.innerHTML = users.map(u => `
+    <tr>
+      <td><b>${escapeHtml(u.login)}</b></td>
+      <td>${escapeHtml(u.name)}</td>
+      <td><span class="admin-badge ${u.role}" style="font-size:11px;">${roleLabel(u.role)}</span></td>
+      <td>
+        ${currentUser.role === 'admin' ? `
+          <button class="admin-btn admin-btn-primary" onclick="changeRole('${u.login}')">Сменить роль</button>
+          <button class="admin-btn admin-btn-danger" onclick="deleteUser('${u.login}')">Удалить</button>
+        ` : '—'}
+      </td>
+    </tr>
+  `).join('');
+}
+
+/* ============================================
+   ЗАЯВКИ
+   ============================================ */
+function addBooking(data) {
+  const list = DB.get('admin_bookings', []);
+  list.unshift({ ...data, date: new Date().toISOString(), status: 'new' });
+  DB.set('admin_bookings', list);
+  if (currentUser) renderBookings();
+}
+
+function deleteBooking(idx) {
+  const list = DB.get('admin_bookings', []);
+  list.splice(idx, 1);
+  DB.set('admin_bookings', list);
+  renderBookings();
+}
+
+function renderBookings() {
+  const box = document.getElementById('bookingsList');
+  const list = DB.get('admin_bookings', []);
+  if (!list.length) {
+    box.innerHTML = '<div class="empty-state">Заявок пока нет</div>';
+    return;
+  }
+  box.innerHTML = list.map((b, i) => `
+    <div class="news-card">
+      <div>
+        <h3>${escapeHtml(b.name)}</h3>
+        <p>📞 ${escapeHtml(b.phone)}</p>
+        <p>🎯 ${escapeHtml(b.purpose)}</p>
+        <div class="meta">${new Date(b.date).toLocaleString('ru-RU')}</div>
+      </div>
+      <div class="news-actions">
+        <button class="admin-btn admin-btn-danger" onclick="deleteBooking(${i})">Удалить</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ============================================
+   НОВОСТИ
+   ============================================ */
+function addNews() {
+  const title = document.getElementById('newsTitle').value.trim();
+  const text = document.getElementById('newsText').value.trim();
+  if (!title || !text) { showToast('Заполните поля', true); return; }
+  const list = DB.get('admin_news', []);
+  list.unshift({ title, text, date: new Date().toISOString(), author: currentUser.name });
+  DB.set('admin_news', list);
+  document.getElementById('newsTitle').value = '';
+  document.getElementById('newsText').value = '';
+  renderNews();
+  renderPublicNews();
+  showToast('Новость опубликована');
+}
+
+function deleteNews(idx) {
+  if (!confirm('Удалить новость?')) return;
+  const list = DB.get('admin_news', []);
+  list.splice(idx, 1);
+  DB.set('admin_news', list);
+  renderNews();
+  renderPublicNews();
+}
+
+function renderNews() {
+  const box = document.getElementById('newsList');
+  const list = DB.get('admin_news', []);
+  if (!list.length) {
+    box.innerHTML = '<div class="empty-state">Новостей пока нет</div>';
+    return;
+  }
+  box.innerHTML = list.map((n, i) => `
+    <div class="news-card">
+      <div>
+        <h3>${escapeHtml(n.title)}</h3>
+        <p>${escapeHtml(n.text)}</p>
+        <div class="meta">👤 ${escapeHtml(n.author)} · ${new Date(n.date).toLocaleString('ru-RU')}</div>
+      </div>
+      <div class="news-actions">
+        <button class="admin-btn admin-btn-danger" onclick="deleteNews(${i})">Удалить</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ============================================
+   БЛОГ
+   ============================================ */
+function addBlog() {
+  const title = document.getElementById('blogTitle').value.trim();
+  const text = document.getElementById('blogText').value.trim();
+  if (!title || !text) { showToast('Заполните поля', true); return; }
+  const list = DB.get('admin_blog', []);
+  list.unshift({ title, text, date: new Date().toISOString(), author: currentUser.name });
+  DB.set('admin_blog', list);
+  document.getElementById('blogTitle').value = '';
+  document.getElementById('blogText').value = '';
+  renderBlog();
+  renderPublicBlog();
+  showToast('Статья опубликована');
+}
+
+function deleteBlog(idx) {
+  if (!confirm('Удалить статью?')) return;
+  const list = DB.get('admin_blog', []);
+  list.splice(idx, 1);
+  DB.set('admin_blog', list);
+  renderBlog();
+  renderPublicBlog();
+}
+
+function renderBlog() {
+  const box = document.getElementById('blogList');
+  const list = DB.get('admin_blog', []);
+  if (!list.length) {
+    box.innerHTML = '<div class="empty-state">Статей пока нет</div>';
+    return;
+  }
+  box.innerHTML = list.map((b, i) => `
+    <div class="news-card">
+      <div>
+        <h3>${escapeHtml(b.title)}</h3>
+        <p>${escapeHtml(b.text)}</p>
+        <div class="meta">👤 ${escapeHtml(b.author)} · ${new Date(b.date).toLocaleString('ru-RU')}</div>
+      </div>
+      <div class="news-actions">
+        <button class="admin-btn admin-btn-danger" onclick="deleteBlog(${i})">Удалить</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+/* ============================================
+   ПУБЛИЧНЫЙ РЕНДЕР НОВОСТЕЙ И БЛОГА
+   ============================================ */
+function renderPublicNews() {
+  const list = DB.get('admin_news', []);
+  const container = document.getElementById('publicNewsList');
+  if (!container) return;
+  
+  if (!list.length) {
+    container.innerHTML = `<div class="empty-state-public">Новостей пока нет — загляните позже 👋</div>`;
+    return;
+  }
+  
+  container.innerHTML = list.slice(0, 6).map((n, i) => `
+    <div class="public-card" onclick="openArticle('news', ${i})">
+      <span class="card-tag">📰 Новость</span>
+      <h3>${escapeHtml(n.title)}</h3>
+      <p>${escapeHtml(n.text)}</p>
+      <div class="card-meta">
+        <span>📅 ${new Date(n.date).toLocaleDateString('ru-RU', {
+          day: 'numeric', month: 'long', year: 'numeric'
+        })}</span>
+        <span class="read-more">Читать →</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function renderPublicBlog() {
+  const list = DB.get('admin_blog', []);
+  const container = document.getElementById('publicBlogList');
+  if (!container) return;
+  
+  if (!list.length) {
+    container.innerHTML = `<div class="empty-state-public">Статей пока нет — скоро появятся ✨</div>`;
+    return;
+  }
+  
+  container.innerHTML = list.slice(0, 6).map((b, i) => `
+    <div class="public-card blog-card" onclick="openArticle('blog', ${i})">
+      <span class="card-tag">📝 Статья</span>
+      <h3>${escapeHtml(b.title)}</h3>
+      <p>${escapeHtml(b.text)}</p>
+      <div class="card-meta">
+        <span>📅 ${new Date(b.date).toLocaleDateString('ru-RU', {
+          day: 'numeric', month: 'long', year: 'numeric'
+        })}</span>
+        <span class="read-more">Читать →</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function openArticle(type, idx) {
+  const key = type === 'news' ? 'admin_news' : 'admin_blog';
+  const list = DB.get(key, []);
+  const item = list[idx];
+  if (!item) return;
+  
+  const tag = type === 'news' ? '📰 Новость' : '📝 Статья';
+  const headerClass = type === 'news' ? '' : 'blog-header';
+  const dateStr = new Date(item.date).toLocaleDateString('ru-RU', {
+    day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit'
+  });
+  
+  const overlay = document.createElement('div');
+  overlay.className = 'modal-overlay active';
+  overlay.id = 'articleModal';
+  overlay.innerHTML = `
+    <div class="modal article-modal">
+      <div class="article-modal-header ${headerClass}">
+        <button class="modal-close" onclick="closeArticleModal()">×</button>
+        <span class="article-modal-tag">${tag}</span>
+        <h2>${escapeHtml(item.title)}</h2>
+        <div class="article-modal-date">📅 ${dateStr}${item.author ? ' · 👤 ' + escapeHtml(item.author) : ''}</div>
+      </div>
+      <div class="article-modal-body">
+        <p>${escapeHtml(item.text)}</p>
+      </div>
+      <div class="article-modal-footer">
+        <button class="btn btn-ghost" onclick="shareArticle('${type}', ${idx})">📤 Поделиться</button>
+        <button class="btn btn-outline" onclick="closeArticleModal(); document.getElementById('booking').scrollIntoView({behavior:'smooth'})">📞 Связаться</button>
+        <a href="#booking" class="btn" onclick="closeArticleModal()">Забронировать стол</a>
+      </div>
+    </div>
+  `;
+  
+  overlay.addEventListener('click', (e) => {
+    if (e.target === overlay) closeArticleModal();
+  });
+  
+  document.body.appendChild(overlay);
+  document.body.style.overflow = 'hidden';
+}
+
+function closeArticleModal() {
+  const modal = document.getElementById('articleModal');
+  if (modal) modal.remove();
+  document.body.style.overflow = '';
+}
+
+function shareArticle(type, idx) {
+  const key = type === 'news' ? 'admin_news' : 'admin_blog';
+  const list = DB.get(key, []);
+  const item = list[idx];
+  if (!item) return;
+  
+  const text = `${item.title}\n\n${item.text}\n\n— Семейное кафе «Карлсон», Якутск`;
+  const url = window.location.href.split('#')[0] + '#' + (type === 'news' ? 'news' : 'blog');
+  
+  if (navigator.share) {
+    navigator.share({ title: item.title, text: text, url: url }).catch(() => {});
+  } else {
+    navigator.clipboard.writeText(text + '\n' + url).then(() => {
+      showToast('Ссылка скопирована в буфер обмена');
+    }).catch(() => {
+      showToast('Не удалось скопировать', true);
+    });
+  }
+}
+
+/* ============================================
+   РЕНДЕР ВСЕГО
+   ============================================ */
+function renderAll() {
+  renderUsers();
+  renderBookings();
+  renderNews();
+  renderBlog();
+}
+
+/* ============================================
+   ОТПРАВКА ЗАЯВКИ С ЛЕНДИНГА
+   ============================================ */
+function submitBooking(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    phone: form.phone.value,
+    purpose: form.purpose.value
+  };
+  addBooking(data);
+  showToast('Заявка отправлена! Мы свяжемся с вами в течение 15 минут.');
+  form.reset();
+}
+
+/* ============================================
+   ВОССТАНОВЛЕНИЕ СЕССИИ
+   ============================================ */
+const saved = sessionStorage.getItem('admin_current');
+if (saved) {
+  try {
+    const u = JSON.parse(saved);
+    const users = DB.get('admin_users', []);
+    const fresh = users.find(x => x.login === u.login);
+    if (fresh) {
+      currentUser = fresh;
+      document.getElementById('adminFab').classList.remove('hidden');
+    }
+  } catch {}
+}
+
+/* ============================================
+   ПУБЛИЧНЫЙ РЕНДЕР ПРИ ЗАГРУЗКЕ
+   ============================================ */
+document.addEventListener('DOMContentLoaded', () => {
+  renderPublicNews();
+  renderPublicBlog();
+});
+</script>
+
+
+</body></html>
